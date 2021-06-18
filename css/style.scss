@@ -21,14 +21,6 @@ a:hover {
 	text-decoration: $text-hover;
 }
 
-/* 共通部分ここまで */
-
-/* top */
-
-.top_body {
-	background-image: url(../images/pic_bg.jpg);
-}
-
 header {
 	display: $flex;
 }
@@ -36,6 +28,7 @@ header {
 .header__logo {
 	width: 100px;
 	height: 100px;
+	background-image: url(../images/img_logo.svg);
 }
 
 .header__nav ul {
@@ -45,7 +38,17 @@ header {
 }
 
 .header__nav li {
-	margin: 0 12px;
+	letter-spacing: 0;
+	margin: 0 26px;
+}
+
+/* 共通部分ここまで */
+
+/* top */
+
+.top_body {
+	background-image: url(../images/pic_bg.jpg);
+	background-size: cover;
 }
 
 .address {
@@ -85,28 +88,43 @@ header {
 /* menuここまで */
 
 /* reservation */
+
+$maxWidth: 1280px;
 $btn-reserve_bg: #454545;
 $btn-reserve_radius: 6px;
 $btn-reserve_color: #fff;
 $btn-reserve_padding: 23px 46px 23px 47px;
 $btn-reserve_width: 210px;
 $btn-reserve_height: 64px;
+$bold: bold;
+
+.reservation_body {
+	width: $maxWidth;
+	background-color: $base-color;
+	font-size: 16px;
+}
+
+.reservation_body h3 {
+	font-weight: $bold;
+}
+
+.warning h3 {
+	text-align: center;
+}
 
 .type {
 	display: $flex;
 	flex-wrap: wrap;
 	overflow: auto;
-
 }
 
-.type__btn{
-	margin:44px 145px;
+.type__btn {
+	margin: 44px 145px;
 	text-align: center;
 }
 
 .type__btn h3 {
-	font-weight: 500;
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 }
 
 .type__btn input {
@@ -116,5 +134,9 @@ $btn-reserve_height: 64px;
 	width: $btn-reserve_width;
 	height: $btn-reserve_height;
 	color: $btn-reserve_color;
+}
+
+.type__btn_tel{
+	display: block;
 }
 /* reservationここまで */

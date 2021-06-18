@@ -15,12 +15,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 共通部分ここまで */
-/* top */
-.top_body {
-  background-image: url(../images/pic_bg.jpg);
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,6 +24,7 @@ header {
 .header__logo {
   width: 100px;
   height: 100px;
+  background-image: url(../images/img_logo.svg);
 }
 
 .header__nav ul {
@@ -41,7 +36,15 @@ header {
 }
 
 .header__nav li {
-  margin: 0 12px;
+  letter-spacing: 0;
+  margin: 0 26px;
+}
+
+/* 共通部分ここまで */
+/* top */
+.top_body {
+  background-image: url(../images/pic_bg.jpg);
+  background-size: cover;
 }
 
 .address {
@@ -79,6 +82,20 @@ header {
 
 /* menuここまで */
 /* reservation */
+.reservation_body {
+  width: 1280px;
+  background-color: #f5f5f5;
+  font-size: 16px;
+}
+
+.reservation_body h3 {
+  font-weight: bold;
+}
+
+.warning h3 {
+  text-align: center;
+}
+
 .type {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,8 +111,7 @@ header {
 }
 
 .type__btn h3 {
-  font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .type__btn input {
@@ -105,6 +121,10 @@ header {
   width: 210px;
   height: 64px;
   color: #fff;
+}
+
+.type__btn_tel {
+  display: block;
 }
 
 /* reservationここまで */
