@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.header__nav ul {
+	display: block;
+}
+
+header {
+	display: block;
+	margin-top: 50%;
+}
+
+.top_body {
+	font-size: 18px;
+	margin: 0;
+	background-image: url(../images/pic_bg_responsive.jpg);
+}
+
+.address {
+	display: none;
+}
+
+.header__nav ul {
+	text-align: center;
+	margin-top: 32px;
+}
+
+.header__nav li{
+	margin: 11px
+}
+
+.header__logo{
+	margin: 0 128px;
+	width: 119px;
+	height: 119px;
+	background-image: url(../images/img_logo.svg);
+	display: block;
+}
