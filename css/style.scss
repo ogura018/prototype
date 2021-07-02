@@ -1,8 +1,7 @@
 @charset "UTF-8";
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", "游ゴシック体", YuGothic, "游ゴシック Medium",
+		"Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 a {
 	color: #303030;
@@ -11,7 +10,7 @@ a {
 
 @media screen and (min-width: 1290px) {
 	/* 共通部分(ヘッダーなど)*/
-$base-color: #f5f5f5;
+	$base-color: #f5f5f5;
 	$text-color: #000;
 	$flex: flex;
 	body {
@@ -72,68 +71,68 @@ $base-color: #f5f5f5;
 
 	/* top */
 	/*topスライドここから*/
-/* --- 背景の指定 ------------------------------------------- */
-.box .bgImg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	opacity: 0;
-	animation: bgAnime 20s infinite; /* 4画像 × 各5s = 20s */
-}
-
-/* --- 段差で背景画像のアニメーションを実行 ----------------- */
-.box .src1 {
-	background-image: url("../images/pic_bg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover; /* 背景の画像を指定 */
-}
-.box .src2 {
-	background-image: url("../images/pic_bg1.jpeg");
-	background-repeat: no-repeat; /* 背景の画像を指定 */
-	animation-delay: 5s;
-	background-size: cover;
-}
-.box .src3 {
-	background-image: url("../images/pic_bg2.jpeg");
-	background-repeat: no-repeat; /* 背景の画像を指定 */
-	animation-delay: 10s;
-	background-size: cover;
-}
-.box .src4 {
-	background-image: url("../images/pic_bg3.jpeg");
-	background-repeat: no-repeat; /* 背景の画像を指定 */
-	animation-delay: 15s;
-	background-size: cover;
-}
-
-@keyframes bgAnime {
-	0% {
+	/* --- 背景の指定 ------------------------------------------- */
+	.box .bgImg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
 		opacity: 0;
+		animation: bgAnime 20s infinite; /* 4画像 × 各5s = 20s */
 	}
-	5% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 1;
-	}
-	30% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
 
-.top_body {
-	text-align: center;
-}
+	/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+	.box .src1 {
+		background-image: url("../images/pic_bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover; /* 背景の画像を指定 */
+	}
+	.box .src2 {
+		background-image: url("../images/pic_bg1.jpeg");
+		background-repeat: no-repeat; /* 背景の画像を指定 */
+		animation-delay: 5s;
+		background-size: cover;
+	}
+	.box .src3 {
+		background-image: url("../images/pic_bg2.jpeg");
+		background-repeat: no-repeat; /* 背景の画像を指定 */
+		animation-delay: 10s;
+		background-size: cover;
+	}
+	.box .src4 {
+		background-image: url("../images/pic_bg3.jpeg");
+		background-repeat: no-repeat; /* 背景の画像を指定 */
+		animation-delay: 15s;
+		background-size: cover;
+	}
 
-.top__center {
-	text-align: center;
-}
-/*topスライドここまで*/
+	@keyframes bgAnime {
+		0% {
+			opacity: 0;
+		}
+		5% {
+			opacity: 1;
+		}
+		25% {
+			opacity: 1;
+		}
+		30% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	.top_body {
+		text-align: center;
+	}
+
+	.top__center {
+		text-align: center;
+	}
+	/*topスライドここまで*/
 	.top__center {
 		text-align: center;
 	}
@@ -231,6 +230,10 @@ $base-color: #f5f5f5;
 	.warning {
 		text-align: center;
 		margin: 0 auto;
+	}
+
+	.warning-p {
+		margin-top: 20px;
 	}
 
 	.warning p {
@@ -440,68 +443,75 @@ $base-color: #f5f5f5;
 
 	/*top*/
 	/*topスライドここから*/
-/* --- 背景の指定 ------------------------------------------- */
-.box .bgImg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	opacity: 0;
-	animation: bgAnime 20s infinite; /* 4画像 × 各5s = 20s */
-}
-
-/* --- 段差で背景画像のアニメーションを実行 ----------------- */
-.box .src1 {
-	background-image: url("../images/pic_bg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover; /* 背景の画像を指定 */
-}
-.box .src2 {
-	background-image: url("../images/pic_bg1.jpeg");
-	background-repeat: no-repeat; /* 背景の画像を指定 */
-	animation-delay: 5s;
-	background-size: cover;
-}
-.box .src3 {
-	background-image: url("../images/pic_bg2.jpeg");
-	background-repeat: no-repeat; /* 背景の画像を指定 */
-	animation-delay: 10s;
-	background-size: cover;
-}
-.box .src4 {
-	background-image: url("../images/pic_bg3.jpeg");
-	background-repeat: no-repeat; /* 背景の画像を指定 */
-	animation-delay: 15s;
-	background-size: cover;
-}
-
-@keyframes bgAnime {
-	0% {
+	/* --- 背景の指定 ------------------------------------------- */
+	.box .bgImg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
 		opacity: 0;
+		animation: bgAnime 20s infinite; /* 4画像 × 各5s = 20s */
 	}
-	5% {
-		opacity: 1;
-	}
-	25% {
-		opacity: 1;
-	}
-	30% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0;
-	}
-}
 
-.top_body {
-	text-align: center;
-}
+	/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+	.box .src1 {
+		background-image: url("../images/pic_bg.jpg");
+		background-repeat: no-repeat;
+		background-size: cover; /* 背景の画像を指定 */
+	}
+	.box .src2 {
+		background-image: url("../images/pic_bg1.jpeg");
+		background-repeat: no-repeat; /* 背景の画像を指定 */
+		animation-delay: 5s;
+		background-size: cover;
+	}
+	.box .src3 {
+		background-image: url("../images/pic_bg2.jpeg");
+		background-repeat: no-repeat; /* 背景の画像を指定 */
+		animation-delay: 10s;
+		background-size: cover;
+	}
+	.box .src4 {
+		background-image: url("../images/pic_bg3.jpeg");
+		background-repeat: no-repeat; /* 背景の画像を指定 */
+		animation-delay: 15s;
+		background-size: cover;
+	}
 
-.top__center {
-	text-align: center;
-}
-/*topスライドここまで*/
+	@keyframes bgAnime {
+		0% {
+			opacity: 0;
+		}
+		5% {
+			opacity: 1;
+		}
+		25% {
+			opacity: 1;
+		}
+		30% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	.top_body {
+		text-align: center;
+	}
+
+	.top__center {
+		text-align: center;
+	}
+	/*topスライドここまで*/
+	.header__logo {
+		margin: 0 20px;
+		width: 100px;
+		height: 100px;
+		background-image: url(../images/img_logo.svg);
+	}
+
 	.top__center {
 		margin-top: 154px;
 	}
@@ -546,9 +556,9 @@ $base-color: #f5f5f5;
 	/*topここまで*/
 
 	/*reservation*/
-		header{
-			display: block;
-		}
+	header {
+		display: block;
+	}
 
 	/*reservationここまで*/
 
