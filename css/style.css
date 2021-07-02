@@ -387,6 +387,17 @@
 
 @media screen and (max-width: 500px) {
   /*共通部分*/
+  html {
+    margin: 15px;
+  }
+  .menu_btn {
+    text-align: right;
+  }
+  /*ハンバーガーメニューの内部*/
+  .res_header {
+    display: none;
+  }
+  /*ハンバーガーメニュー内部ここまで*/
   /*共通部分ここまで*/
   /*top*/
   .header__logo {
@@ -423,27 +434,26 @@
     text-align: center;
   }
   .box {
-    /* position   : relative; */
-    /* max-width  : 400px;
-	height     : 250px; */
     margin: auto;
     overflow: hidden;
     background-repeat: no-repeat;
   }
   /*topここまで*/
   /*reservation*/
-  header {
-    display: block;
-  }
   /*reservationここまで*/
   /*access*/
-  .access__image img {
+  .access__image {
+    background-image: url(../images/pic_exterior_res.jpg);
     width: 100%;
+    height: 162px;
     margin-top: 70px;
   }
   .access__table {
     margin-left: auto;
     margin-right: auto;
+  }
+  .access__tr {
+    display: block;
   }
   .access__tr .access__title {
     padding: 15px 25px 15px 0;
