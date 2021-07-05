@@ -119,6 +119,7 @@
 
 	header {
 		display: $flex;
+		letter-spacing: 0.05em;
 	}
 
 	.header__logo {
@@ -290,8 +291,6 @@
 		text-align: center;
 	}
 
-	.warning p {
-	}
 
 	.warning_h3 {
 		text-align: center;
