@@ -21,7 +21,16 @@
 
 	/*topスライドここから*/
 	/* --- 背景の指定 ------------------------------------------- */
-
+	.box::after {
+		content: "";
+		display: block;
+		background-color: rgba($color: #000000, $alpha: 0.2);
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
 
 	.box .bgImg {
 		background-color: rgba($color: #000000, $alpha: 0.5);
@@ -37,20 +46,20 @@
 	/* --- 段差で背景画像のアニメーションを実行 ----------------- */
 	.box .src1 {
 		background-color: rgba($color: #000000, $alpha: 0.2);
-		background-image: url("../images/pic_bg.jpg");
+		background-image: url("../images/pic_bg.svg");
 		background-repeat: no-repeat;
 		background-size: cover; /* 背景の画像を指定 */
 	}
 	.box .src2 {
 		background-color: rgba($color: #000000, $alpha: 0.2);
-		background-image: url("../images/pic_bg1.jpeg");
+		background-image: url("../images/pic_bg1.svg");
 		background-repeat: no-repeat; /* 背景の画像を指定 */
 		animation-delay: 5s;
 		background-size: cover;
 	}
 	.box .src3 {
 		background-color: rgba($color: #000000, $alpha: 0.2);
-		background-image: url("../images/pic_bg2.jpeg");
+		background-image: url("../images/pic_bg2.svg");
 		background-repeat: no-repeat; /* 背景の画像を指定 */
 		animation-delay: 10s;
 		background-size: cover;
@@ -172,13 +181,11 @@
 	/* top */
 
 	.top__center {
-
 		background-size: cover;
 		width: max-content;
 		height: max-content;
 		z-index: 1000;
 		text-align: center;
-
 	}
 
 	.top_header {
@@ -233,13 +240,13 @@
 		text-align: center;
 	}
 
-	.menu_main__list__lists__menus{
-		margin:0 132px;
+	.menu_main__list__lists__menus {
+		margin: 0 132px;
 		display: flex;
 		justify-content: space-between;
 	}
 
-	.menu_main__list__lists__once{
+	.menu_main__list__lists__once {
 		display: flex;
 	}
 	/* menuここまで */
@@ -273,17 +280,17 @@
 	}
 
 	.warning {
-		text-align: center;
 		margin: 0 auto;
 	}
 
 	.warning-p {
 		margin-top: 20px;
+
+		display: inline-block;
+		text-align: center;
 	}
 
 	.warning p {
-		display: inline-block;
-		text-align: left;
 	}
 
 	.warning_h3 {
@@ -299,10 +306,12 @@
 
 	.type {
 		text-align: center;
-		display: $flex;
+		display: inline-flex;
 		flex-wrap: wrap;
 		overflow: auto;
 		justify-content: center;
+		max-width: 1177px;
+		text-align: center;
 	}
 
 	.type__btn {

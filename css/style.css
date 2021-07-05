@@ -16,6 +16,16 @@
   }
   /*topスライドここから*/
   /* --- 背景の指定 ------------------------------------------- */
+  .box::after {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
   .box .bgImg {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -31,14 +41,14 @@
   /* --- 段差で背景画像のアニメーションを実行 ----------------- */
   .box .src1 {
     background-color: rgba(0, 0, 0, 0.2);
-    background-image: url("../images/pic_bg.jpg");
+    background-image: url("../images/pic_bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     /* 背景の画像を指定 */
   }
   .box .src2 {
     background-color: rgba(0, 0, 0, 0.2);
-    background-image: url("../images/pic_bg1.jpeg");
+    background-image: url("../images/pic_bg1.svg");
     background-repeat: no-repeat;
     /* 背景の画像を指定 */
     -webkit-animation-delay: 5s;
@@ -47,7 +57,7 @@
   }
   .box .src3 {
     background-color: rgba(0, 0, 0, 0.2);
-    background-image: url("../images/pic_bg2.jpeg");
+    background-image: url("../images/pic_bg2.svg");
     background-repeat: no-repeat;
     /* 背景の画像を指定 */
     -webkit-animation-delay: 10s;
@@ -261,15 +271,12 @@
     font-size: 16px;
   }
   .warning {
-    text-align: center;
     margin: 0 auto;
   }
   .warning-p {
     margin-top: 20px;
-  }
-  .warning p {
     display: inline-block;
-    text-align: left;
+    text-align: center;
   }
   .warning_h3 {
     text-align: center;
@@ -281,15 +288,17 @@
   }
   .type {
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     overflow: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    max-width: 1177px;
+    text-align: center;
   }
   .type__btn {
     margin: 44px 145px;
