@@ -202,8 +202,8 @@
     z-index: 1000;
     text-align: center;
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 48%;
+    left: 52%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
