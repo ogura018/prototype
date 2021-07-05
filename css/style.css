@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*全サイズ共通*/
 @media screen and (min-width: 1px) {
   body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
@@ -7,9 +8,16 @@
     color: #303030;
     text-decoration: none;
   }
+  .top_header__nav {
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+  }
+  .top_header__nav a {
+    color: #fff;
+  }
   /*topスライドここから*/
   /* --- 背景の指定 ------------------------------------------- */
   .box .bgImg {
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -22,12 +30,14 @@
   }
   /* --- 段差で背景画像のアニメーションを実行 ----------------- */
   .box .src1 {
+    background-color: rgba(0, 0, 0, 0.2);
     background-image: url("../images/pic_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     /* 背景の画像を指定 */
   }
   .box .src2 {
+    background-color: rgba(0, 0, 0, 0.2);
     background-image: url("../images/pic_bg1.jpeg");
     background-repeat: no-repeat;
     /* 背景の画像を指定 */
@@ -36,6 +46,7 @@
     background-size: cover;
   }
   .box .src3 {
+    background-color: rgba(0, 0, 0, 0.2);
     background-image: url("../images/pic_bg2.jpeg");
     background-repeat: no-repeat;
     /* 背景の画像を指定 */
@@ -44,6 +55,7 @@
     background-size: cover;
   }
   .box .src4 {
+    background-color: rgba(0, 0, 0, 0.2);
     background-image: url("../images/pic_bg3.jpeg");
     background-repeat: no-repeat;
     /* 背景の画像を指定 */
@@ -87,14 +99,18 @@
   }
   .top_body {
     text-align: center;
-  }
-  .top__center {
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    float: left;
+    z-index: 1000;
   }
   /*topスライドここまで*/
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   /* 共通部分(ヘッダーなど)*/
   .menu_btn {
     display: none;
@@ -160,6 +176,14 @@
   /* 共通部分ここまで */
   /* top */
   .top__center {
+    background-size: cover;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 1000;
     text-align: center;
   }
   .top_header {
@@ -201,6 +225,20 @@
   }
   .menu_main__list h1 {
     text-align: center;
+  }
+  .menu_main__list__lists__menus {
+    margin: 0 132px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu_main__list__lists__once {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   /* menuここまで */
   /* reservation */
@@ -362,8 +400,13 @@
   .access_body footer {
     text-align: center;
   }
-  .access__image img {
-    width: 100%;
+  .access__image__img {
+    text-align: center;
+  }
+  .access__image {
+    background-image: url(/images/pic_exterior.jpg);
+    width: 1130px;
+    height: 535px;
     margin-top: 70px;
   }
   .access__table {
