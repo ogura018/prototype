@@ -126,7 +126,7 @@
 		margin: 0 20px;
 		width: 100px;
 		height: 100px;
-		background-image: url(../images/img_logo.svg);
+		background-image: url(https://memo0618.jp/mauve/images/img_logo.svg);
 	}
 
 	.header__nav {
@@ -150,22 +150,20 @@
 	}
 
 	.header__nav #nav_menu:hover {
-		background-image: url(../images/Menu.svg);
+		background-image: url(https://memo0618.jp/mauve/images/Menu.svg);
 	}
 	.header__nav #nav_reserve:hover {
-		background-image: url(../images/reservation.svg);
+		background-image: url(https://memo0618.jp/mauve/images/reservation.svg);
 	}
 	.header__nav #nav_access:hover {
-		background-image: url(../images/access.svg);
+		background-image: url(https://memo0618.jp/mauve/images/access.svg);
 	}
-	.header__nav #nav_gallery:hover {
-		background-image: url(../images/gallery.svg);
-	}
+
 	.header__nav #nav_insta:hover {
-		background-image: url(../images/instagram.svg);
+		background-image: url(https://memo0618.jp/mauve/images/instagram.svg);
 	}
 	.header__nav #nav_blog:hover {
-		background-image: url(../images/blog.svg);
+		background-image: url(https://memo0618.jp/mauve/images/blog.svg);
 	}
 
 	.box {
@@ -248,7 +246,14 @@
 	}
 
 	.menu_main__list__lists__once {
+		width: 442px;
 		display: flex;
+		margin-bottom: 65px;
+		justify-content: space-between;
+	}
+
+	.menu_main__list__lists__once p{
+		font-size: 16px;
 	}
 	/* menuここまで */
 
@@ -339,7 +344,7 @@
 	}
 	.type__btn #instagram {
 		border: none;
-		background-image: url(/images/img_input_insta_bg.png);
+		background-image: url(https://memo0618.jp/mauve/images/img_input_insta_bg.png);
 	}
 
 	.type__btn .insta_bg {
@@ -457,9 +462,11 @@
 	}
 
 	.access__image {
-		background-image: url(/images/pic_exterior.jpg);
+		background-image: url(https://memo0618.jp/mauve/images/pic_exterior.jpg);
 		width: 1130px;
 		height: 535px;
+		background-size: cover;
+		background-position-y: -60px;
 		margin-top: 70px;
 	}
 
@@ -528,7 +535,7 @@
 		margin: 0 20px;
 		width: 100px;
 		height: 100px;
-		background-image: url(../images/img_logo.svg);
+		background-image: url(https://memo0618.jp/mauve/images/img_logo.svg);
 	}
 
 	.top__center {
@@ -580,7 +587,9 @@
 	}
 
 	.access__image {
-		background-image: url(../images/pic_exterior_res.jpg);
+		background-image: url(https://memo0618.jp/mauve/images/pic_exterior.jpg);
+		background-size: cover;
+		background-position-y: -20px;
 		width: 100%;
 		height: 162px;
 		margin-top: 70px;
