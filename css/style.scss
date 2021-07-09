@@ -463,7 +463,7 @@
 
 	.access__image {
 		background-image: url(https://memo0618.jp/mauve/images/pic_exterior.jpg);
-		width: 1130px;
+		width: 100%;
 		height: 535px;
 		background-size: cover;
 		background-position-y: -60px;
@@ -593,6 +593,7 @@
 		width: 100%;
 		height: 162px;
 		margin-top: 70px;
+		display: inline-block;
 	}
 
 	.access__table {
