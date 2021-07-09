@@ -1,0 +1,570 @@
+@charset "UTF-8";
+/*全サイズ共通*/
+@media screen and (min-width: 1px) {
+  body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  }
+  a {
+    color: #303030;
+    text-decoration: none;
+  }
+  .top_header__nav {
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+  }
+  .top_header__nav a {
+    color: #fff;
+  }
+  /*topスライドここから*/
+  /* --- 背景の指定 ------------------------------------------- */
+  .box::after {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .box .bgImg {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-animation: bgAnime 20s infinite;
+            animation: bgAnime 20s infinite;
+    /* 4画像 × 各5s = 20s */
+  }
+  /* --- 段差で背景画像のアニメーションを実行 ----------------- */
+  .box .src1 {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("../images/pic_bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 背景の画像を指定 */
+  }
+  .box .src2 {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("../images/pic_bg1.svg");
+    background-repeat: no-repeat;
+    /* 背景の画像を指定 */
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+    background-size: cover;
+  }
+  .box .src3 {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("../images/pic_bg2.svg");
+    background-repeat: no-repeat;
+    /* 背景の画像を指定 */
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+    background-size: cover;
+  }
+  .box .src4 {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("../images/pic_bg3.jpeg");
+    background-repeat: no-repeat;
+    /* 背景の画像を指定 */
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+    background-size: cover;
+  }
+  @-webkit-keyframes bgAnime {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes bgAnime {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .top_body {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    float: left;
+    z-index: 1000;
+  }
+  /*topスライドここまで*/
+}
+
+@media screen and (min-width: 500px) {
+  /* 共通部分(ヘッダーなど)*/
+  .menu_btn {
+    display: none;
+  }
+  body {
+    margin: 75px;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    letter-spacing: 0.05em;
+  }
+  .header__logo {
+    margin: 0 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url(https://memo0618.jp/mauve/images/img_logo.svg);
+  }
+  .header__nav {
+    position: relative;
+  }
+  .header__nav ul {
+    margin: 37px 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    position: relative;
+  }
+  .header__nav ul > a {
+    height: 20px;
+  }
+  .header__nav li {
+    letter-spacing: 0;
+    margin: 0 15px;
+  }
+  .header__nav #nav_menu:hover {
+    background-image: url(https://memo0618.jp/mauve/images/Menu.svg);
+  }
+  .header__nav #nav_reserve:hover {
+    background-image: url(https://memo0618.jp/mauve/images/reservation.svg);
+  }
+  .header__nav #nav_access:hover {
+    background-image: url(https://memo0618.jp/mauve/images/access.svg);
+  }
+  .header__nav #nav_insta:hover {
+    background-image: url(https://memo0618.jp/mauve/images/instagram.svg);
+  }
+  .header__nav #nav_blog:hover {
+    background-image: url(https://memo0618.jp/mauve/images/blog.svg);
+  }
+  .box {
+    /* position   : relative; */
+    /* max-width  : 400px;
+		height     : 250px; */
+    margin: auto;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+  /* 共通部分ここまで */
+  /* top */
+  .top__center {
+    background-size: cover;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 1000;
+    text-align: center;
+  }
+  .top_header {
+    margin: 0 auto;
+    z-index: 1000;
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    left: 52%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .top_header__nav ul {
+    margin-top: 50px;
+    list-style: none;
+  }
+  .top_header__nav li {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .top_body {
+    text-align: center;
+  }
+  /* topここまで */
+  /* menu */
+  .menu_body {
+    background-color: #f5f5f5;
+  }
+  .menu_main__firstview {
+    margin-top: 75px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .menu_main__firstview img {
+    width: 100%;
+  }
+  .menu_main__list {
+    margin-top: 56px;
+  }
+  .menu_main__list h1 {
+    text-align: center;
+  }
+  .menu_main__list__lists__menus {
+    margin: 0 132px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu_main__list__lists__once {
+    width: 442px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 65px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu_main__list__lists__once p {
+    font-size: 16px;
+  }
+  /* menuここまで */
+  /* reservation */
+  .inner {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .reservation_body {
+    min-width: 1280px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    text-align: center;
+    background-color: #fff;
+  }
+  .reservation_main {
+    text-align: center;
+  }
+  .reservation_body h3 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .warning {
+    margin: 0 auto;
+  }
+  .warning-p {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+  }
+  .warning_h3 {
+    text-align: center;
+  }
+  .warning {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 110px;
+  }
+  .type {
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1177px;
+    text-align: center;
+  }
+  .type__btn {
+    margin: 44px 145px;
+    text-align: center;
+    position: relative;
+  }
+  .type__btn h3 {
+    margin-bottom: 10px;
+  }
+  .type__btn input, #submit {
+    border-radius: 6px;
+    border: 1px solid;
+    width: 210px;
+    height: 64px;
+  }
+  .type__btn #line {
+    border-color: #1f7e1f;
+  }
+  .type__btn #instagram {
+    border: none;
+    background-image: url(https://memo0618.jp/mauve/images/img_input_insta_bg.png);
+  }
+  .type__btn .insta_bg {
+    padding: 18px;
+    position: absolute;
+    border-radius: 6px;
+    top: 35px;
+    left: 1px;
+    width: 208px;
+    height: 61px;
+    background-color: #fff;
+  }
+  .type__btn #mail {
+    border-color: #2358ac;
+  }
+  .type__btn #tel {
+    border-color: #482b6a;
+  }
+  .type__button_tel {
+    display: block;
+  }
+  .type__button_tel p {
+    font-size: 12px;
+  }
+  /*reservationの予約フォームここから*/
+  .forms__inputs input, .forms__inputs select, .forms__inputs #tell {
+    width: 436px;
+    padding: 2px;
+    margin-left: 50px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 0.5px;
+    margin: 22px 0;
+  }
+  .forms {
+    display: inline-block;
+    text-align: center;
+    width: 710px;
+  }
+  .forms h3 {
+    text-align: center;
+    margin-top: 49px;
+    margin-bottom: 30px;
+  }
+  .forms__who {
+    text-align: center;
+  }
+  .forms__who label {
+    margin: 0 80px;
+  }
+  .inputs_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .forms__inputs {
+    display: block;
+  }
+  .forms__inputs p {
+    margin: 22px 0;
+  }
+  .forms__inputs select {
+    padding: 5px 10px;
+    width: 165px;
+    height: 28px;
+  }
+  .forms__inputs option {
+    text-align: center;
+  }
+  .forms__inputs #tell {
+    height: 179px;
+  }
+  #submit {
+    border-color: #bc1b1b;
+  }
+  footer {
+    margin-top: 140px;
+  }
+  /*予約フォームここまで*/
+  /* reservationここまで */
+  /*accessここから*/
+  .access_body footer {
+    text-align: center;
+  }
+  .access__image__img {
+    text-align: center;
+  }
+  .access__image {
+    background-image: url(https://memo0618.jp/mauve/images/pic_exterior.jpg);
+    width: 1130px;
+    height: 535px;
+    background-size: cover;
+    background-position-y: -60px;
+    margin-top: 70px;
+  }
+  .access__table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .access__tr .access__title {
+    padding: 15px 25px 15px 0;
+  }
+  .access__tr .access__text {
+    padding: 15px 0 15px 25px;
+  }
+  .access__tr .access__start {
+    padding-top: 85px;
+  }
+  .access__tr .access__finish {
+    padding-bottom: 85px;
+  }
+  .access__map {
+    display: block;
+    margin: 0 auto;
+    width: 61.9%;
+    max-width: 100%;
+  }
+  .access__table_res {
+    display: none;
+  }
+  .access__map_res {
+    display: none;
+  }
+  /*accessここまで*/
+}
+
+@media screen and (max-width: 500px) {
+  /*共通部分*/
+  html {
+    margin: 15px;
+  }
+  .menu_btn {
+    text-align: right;
+  }
+  /*ハンバーガーメニューの内部*/
+  .res_header {
+    display: none;
+  }
+  /*ハンバーガーメニュー内部ここまで*/
+  /*共通部分ここまで*/
+  /*top*/
+  .header__logo {
+    margin: 0 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url(https://memo0618.jp/mauve/images/img_logo.svg);
+  }
+  .top__center {
+    margin-top: 154px;
+  }
+  .top__center {
+    text-align: center;
+  }
+  .top_header {
+    margin: 0 auto;
+    z-index: 1000;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .top_header__nav ul {
+    margin-top: 50px;
+    list-style: none;
+  }
+  .top_header__nav li {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  .top_body {
+    text-align: center;
+  }
+  .box {
+    margin: auto;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+  /*topここまで*/
+  /*reservation*/
+  /*reservationここまで*/
+  /*access*/
+  .access_body {
+    text-align: center;
+  }
+  .access__image {
+    background-image: url(https://memo0618.jp/mauve/images/pic_exterior.jpg);
+    background-size: cover;
+    background-position-y: -20px;
+    width: 100%;
+    height: 162px;
+    margin-top: 70px;
+  }
+  .access__table {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .access__tr {
+    display: block;
+  }
+  .access__tr .access__title {
+    padding: 15px 25px 15px 0;
+  }
+  .access__tr .access__text {
+    padding: 15px 0 15px 25px;
+  }
+  .access__tr .access__start {
+    padding-top: 85px;
+  }
+  .access__tr .access__finish {
+    padding-bottom: 85px;
+  }
+  .access__map {
+    display: none;
+  }
+  .access__map_res {
+    display: block;
+    margin: 0 auto 73px;
+    max-width: 100%;
+  }
+  .access__table_res {
+    margin: 71px auto 49px;
+    text-align: left;
+  }
+  .access__table_res h3 {
+    margin-bottom: 9px;
+    color: #838383;
+    font-weight: 500;
+  }
+  .access__table_res p {
+    margin-bottom: 16px;
+  }
+  /*accessここまで*/
+}
+/*# sourceMappingURL=style.css.map */
