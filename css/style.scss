@@ -216,13 +216,18 @@
 	/* topここまで */
 
 	/* menu */
+	h1{
+		letter-spacing:0.05em;
+		font-weight: 600;
+	}
 
 	.menu_body {
 		background-color: $base-color;
+		text-align: center;
 	}
 
 	.menu_main__firstview {
-		margin-top: 75px;
+		margin-top: 70px;
 		height: 500px;
 		overflow: hidden;
 	}
@@ -231,29 +236,64 @@
 		width: 100%;
 	}
 
-	.menu_main__list {
-		margin-top: 56px;
-	}
 
 	.menu_main__list h1 {
 		text-align: center;
 	}
 
+	.menu_main__list__items {
+		margin-top: 70px;
+		display: inline-block;
+		text-align: center;
+	}
+	.title-value {
+		display: flex;
+		justify-content: space-between;
+	}
+	.menu_main__list__lists {
+		// width: 565px;
+		// height: 288px;
+		padding: 16px 66px;
+
+	}
+
+	$glay: #707070;
+
+	.list-left {
+		border-right: solid $glay 1px;
+	}
+
 	.menu_main__list__lists__menus {
-		margin: 0 132px;
+		margin-top: 40px;
 		display: flex;
 		justify-content: space-between;
 	}
-
 	.menu_main__list__lists__once {
+		text-align: left;
 		width: 442px;
-		display: flex;
-		margin-bottom: 65px;
+		display: inline-block;
+		margin-top: 49px;
 		justify-content: space-between;
 	}
 
-	.menu_main__list__lists__once p{
+	.menu_main__list__lists__once p {
 		font-size: 16px;
+
+		// line-height: 27px;
+	}
+
+	.menu_main__list__lists__once dt{
+		height: -content;
+	}
+
+	.menu_main__list__lists__once dd {
+		color: $glay;
+		margin-left: 5px;
+		font-size: 13px;
+		width: 370px;
+		overflow: hidden;
+		height: 20px;
+		// line-height: 23px;
 	}
 	/* menuここまで */
 
@@ -295,7 +335,6 @@
 		display: inline-block;
 		text-align: center;
 	}
-
 
 	.warning_h3 {
 		text-align: center;
