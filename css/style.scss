@@ -246,12 +246,16 @@
 		display: inline-block;
 		text-align: center;
 	}
+
+	.menu_main__list__items h1{
+		color: #855896;
+	}
 	.title-value {
 		display: flex;
 		justify-content: space-between;
 	}
 	.menu_main__list__lists {
-		// width: 565px;
+		width: 574px;
 		// height: 288px;
 		padding: 16px 66px;
 
