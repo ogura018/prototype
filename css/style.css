@@ -2,7 +2,7 @@
 /*全サイズ共通*/
 @media screen and (min-width: 1px) {
   body {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   }
   a {
     color: #303030;
@@ -120,7 +120,7 @@
   /*topスライドここまで*/
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
   /* 共通部分(ヘッダーなど)*/
   .menu_btn {
     display: none;
@@ -158,21 +158,6 @@
     letter-spacing: 0;
     margin: 0 15px;
   }
-  .header__nav #nav_menu:hover {
-    background-image: url(https://memo0618.jp/mauve/images/Menu.svg);
-  }
-  .header__nav #nav_reserve:hover {
-    background-image: url(https://memo0618.jp/mauve/images/reservation.svg);
-  }
-  .header__nav #nav_access:hover {
-    background-image: url(https://memo0618.jp/mauve/images/access.svg);
-  }
-  .header__nav #nav_insta:hover {
-    background-image: url(https://memo0618.jp/mauve/images/instagram.svg);
-  }
-  .header__nav #nav_blog:hover {
-    background-image: url(https://memo0618.jp/mauve/images/blog.svg);
-  }
   .box {
     /* position   : relative; */
     /* max-width  : 400px;
@@ -180,6 +165,14 @@
     margin: auto;
     overflow: hidden;
     background-repeat: no-repeat;
+  }
+  #back_top div {
+    width: 54px;
+    height: 117px;
+    background-image: url(https://memo0618.jp/mauve/images/images/btn_top.svg);
+    position: fixed;
+    right: 75px;
+    bottom: 100px;
   }
   /* 共通部分ここまで */
   /* top */
@@ -244,7 +237,7 @@
   .menu_main__list__items h1 {
     color: #855896;
   }
-  .title-value {
+  .title-value dl {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -323,7 +316,6 @@
     text-align: center;
   }
   .warning {
-    text-align: left;
     margin-bottom: 20px;
     margin-top: 110px;
   }
@@ -394,7 +386,6 @@
     background-color: #fff;
     border-style: solid;
     border-width: 0.5px;
-    margin: 22px 0;
   }
   .forms {
     display: inline-block;
@@ -437,6 +428,46 @@
   }
   .forms__inputs #tell {
     height: 179px;
+  }
+  .off-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #off {
+    width: 13px;
+    height: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  #nooff {
+    width: 13px;
+    height: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #offb {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #hand {
+    width: 13px;
+    height: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #foot {
+    width: 13px;
+    height: 14px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 66px;
   }
   #submit {
     border-color: #bc1b1b;
@@ -492,7 +523,7 @@
   /*accessここまで*/
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   /*共通部分*/
   html {
     margin: 15px;
@@ -546,6 +577,35 @@
     background-repeat: no-repeat;
   }
   /*topここまで*/
+  /*menu*/
+  .menu_main__firstview {
+    margin-top: 100px;
+    height: 162px;
+    overflow: hidden;
+  }
+  .menu_main__firstview img {
+    width: 100%;
+  }
+  .menu_main__list__items {
+    margin-top: 71px;
+  }
+  .menu_main__list__items h1 {
+    text-align: center;
+    color: #855896;
+  }
+  .title-value dl {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu_body footer {
+    margin: 156px 0 103px 0;
+  }
+  /*menuここまで*/
   /*reservation*/
   /*reservationここまで*/
   /*access*/
