@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="210" height="63" viewBox="0 0 210 63">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.3" y1="-0.117" x2="0.427" y2="1.225" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4c58d6"/>
+      <stop offset="0.161" stop-color="#993095"/>
+      <stop offset="0.481" stop-color="#c33276"/>
+      <stop offset="0.769" stop-color="#e9345a"/>
+      <stop offset="1" stop-color="#f3b63d"/>
+    </linearGradient>
+  </defs>
+  <g id="グループ_70" data-name="グループ 70" transform="translate(1 1)">
+    <rect id="長方形_5" data-name="長方形 5" width="210" height="63" rx="7" transform="translate(-1 -1)" fill="url(#linear-gradient)"/>
+    <rect id="長方形_5-2" data-name="長方形 5" width="208" height="61" rx="6" fill="#fff"/>
+    <text id="Instagramで予約" transform="translate(45 36)" fill="#1c1a1a" font-size="16" font-family="Helvetica"><tspan x="0" y="0">Instagram</tspan><tspan y="0" font-family="HiraginoSans-W3, Hiragino Sans">で予約</tspan></text>
+  </g>
+</svg>

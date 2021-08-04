@@ -136,9 +136,16 @@
   }
   .header__logo {
     margin: 0 20px;
-    width: 100px;
-    height: 100px;
-    background-image: url(https://memo0618.jp/mauve/images/img_logo.svg);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    color: #000;
+  }
+  .header__logo img {
+    width: 50%;
   }
   .header__nav {
     position: relative;
@@ -237,6 +244,9 @@
   .menu_main__list__items h1 {
     color: #855896;
   }
+  .menu_main__list__items__p {
+    margin-top: 25px;
+  }
   .title-value dl {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -274,15 +284,24 @@
     font-size: 16px;
   }
   .menu_main__list__lists__once dt {
-    height: -content;
+    width: 300px;
   }
   .menu_main__list__lists__once dd {
+    text-align: right;
     color: #707070;
     margin-left: 5px;
     font-size: 13px;
     width: 370px;
     overflow: hidden;
     height: 20px;
+  }
+  .menu_main__list__once__detail {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #3e3e3e;
+  }
+  .menu_small_wrapper {
+    margin-top: 15px;
   }
   /* menuここまで */
   /* reservation */
@@ -316,17 +335,16 @@
     text-align: center;
   }
   .warning {
-    margin-bottom: 20px;
     margin-top: 110px;
   }
   .type {
+    margin-top: 84px;
     text-align: center;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    overflow: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -341,34 +359,13 @@
   .type__btn h3 {
     margin-bottom: 10px;
   }
-  .type__btn input, #submit {
-    border-radius: 6px;
-    border: 1px solid;
-    width: 210px;
-    height: 64px;
-  }
-  .type__btn #line {
-    border-color: #1f7e1f;
-  }
-  .type__btn #instagram {
-    border: none;
-    background-image: url(https://memo0618.jp/mauve/images/img_input_insta_bg.png);
-  }
-  .type__btn .insta_bg {
-    padding: 18px;
-    position: absolute;
-    border-radius: 6px;
-    top: 35px;
-    left: 1px;
-    width: 208px;
-    height: 61px;
-    background-color: #fff;
-  }
-  .type__btn #mail {
-    border-color: #2358ac;
-  }
-  .type__btn #tel {
-    border-color: #482b6a;
+  .type__btn input, .type__btn {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .type__button_tel {
     display: block;
@@ -377,103 +374,50 @@
     font-size: 12px;
   }
   /*reservationの予約フォームここから*/
-  .forms__inputs input, .forms__inputs select, .forms__inputs #tell {
-    width: 436px;
-    padding: 2px;
-    margin-left: 50px;
-    height: 24px;
-    border-radius: 2px;
-    background-color: #fff;
-    border-style: solid;
-    border-width: 0.5px;
-  }
-  .forms {
-    display: inline-block;
-    text-align: center;
-    width: 710px;
-  }
-  .forms h3 {
-    text-align: center;
-    margin-top: 49px;
-    margin-bottom: 30px;
-  }
-  .forms__who {
-    text-align: center;
-  }
-  .forms__who label {
-    margin: 0 80px;
-  }
-  .inputs_main {
+  .form__main__once {
+    text-align: left;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: start;
+    border: none;
+    margin-bottom: 30px;
+  }
+  label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form__main__ever {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form__main__labels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .form__main__labels__once {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .forms__inputs {
-    display: block;
+  .form__main__labels__once input {
+    margin-top: 5px;
   }
-  .forms__inputs p {
-    margin: 22px 0;
+  input, select, textarea {
+    background-color: #ebebeb;
+    border-radius: 7px;
   }
-  .forms__inputs select {
-    padding: 5px 10px;
-    width: 165px;
-    height: 28px;
-  }
-  .forms__inputs option {
-    text-align: center;
-  }
-  .forms__inputs #tell {
-    height: 179px;
-  }
-  .off-item {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #off {
-    width: 13px;
-    height: 14px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 20px;
-  }
-  #nooff {
-    width: 13px;
-    height: 14px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #offb {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #hand {
-    width: 13px;
-    height: 14px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #foot {
-    width: 13px;
-    height: 14px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 66px;
-  }
-  #submit {
-    border-color: #bc1b1b;
-  }
-  footer {
-    margin-top: 140px;
+  textarea {
+    height: 189px;
   }
   /*予約フォームここまで*/
   /* reservationここまで */
@@ -523,6 +467,78 @@
   /*accessここまで*/
 }
 
+/*contact*/
+.contact__form {
+  text-align: center;
+}
+
+.contact__form h3 {
+  margin-top: 100px;
+}
+
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+.Form-Item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  max-width: 436px;
+  background: #eaedf2;
+}
+
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 190px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  width: 100%;
+  max-width: 436px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+.Form-Btn {
+  margin-top: 70px;
+  border-radius: 6px;
+  border: 1px solid;
+  width: 210px;
+  height: 64px;
+}
+
+.copy {
+  text-align: center;
+  font-size: 12px;
+}
+
+/*contactここまで*/
 @media screen and (max-width: 700px) {
   /*共通部分*/
   html {
@@ -605,8 +621,110 @@
   .menu_body footer {
     margin: 156px 0 103px 0;
   }
+  footer {
+    text-align: center;
+  }
   /*menuここまで*/
   /*reservation*/
+  .reservation_body {
+    text-align: center;
+  }
+  .warning {
+    margin-top: 59px;
+    text-align: center;
+  }
+  .warning-p {
+    margin-top: 22px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+  }
+  .warning-p p {
+    line-height: 17px;
+  }
+  .type {
+    margin-top: 75px;
+  }
+  .type__btn {
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+  }
+  .type__btn__button {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .type__btn a > img {
+    margin-top: 15px;
+  }
+  .forms {
+    margin-top: 70px;
+  }
+  .form__main {
+    margin-top: 35px;
+    text-align: left;
+  }
+  .form__main__once {
+    margin-top: 27px;
+    border: none;
+  }
+  .form__main__labels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form__main__labels__once {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form__main__labels__once__label-left {
+    margin-top: 6px;
+    margin-left: 13px;
+  }
+  .form__main__labels__once__label-right {
+    margin-top: 6px;
+    margin-left: 9px;
+  }
+  .form__main__labels__once input {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-top: 5px;
+  }
+  .form__main__labels__once label {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .form__main__ever {
+    width: 207px;
+  }
+  .form__main__off {
+    width: 242px;
+  }
+  .form__main__hand-foot {
+    width: 231px;
+  }
+  input, select, textarea {
+    background-color: #ebebeb;
+    border-radius: 7px;
+    width: 100%;
+    height: 24px;
+  }
+  textarea {
+    height: 189px;
+  }
+  .reserve__form__submit {
+    margin-top: 31px;
+    margin-bottom: 108px;
+    text-align: center;
+    display: block;
+  }
+  .reservation_body footer {
+    margin-bottom: 74px;
+  }
   /*reservationここまで*/
   /*access*/
   .access_body {
@@ -662,5 +780,32 @@
     margin-bottom: 16px;
   }
   /*accessここまで*/
+  /* contact */
+  .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    -webkit-box-flex: inherit;
+    -ms-flex: inherit;
+    flex: inherit;
+  }
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    -webkit-box-flex: inherit;
+    -ms-flex: inherit;
+    flex: inherit;
+  }
+  .Form-Btn {
+    margin-bottom: 110px;
+  }
+  /* contactここまで */
 }
 /*# sourceMappingURL=style.css.map */
